@@ -43,7 +43,13 @@ public class RestClientService {
             client = KieServicesFactory.newKieServicesClient(conf);
 
         } catch (Exception e) {
-            logger.error("ERROR in initializing REST client...", e);
+        		logger.error("ERROR in initializing REST client...");
+        		logger.error("------------------------------------");
+        		logger.error("Username: " + user.username());
+        		logger.error("Password: " + user.password());
+        		logger.error("REST_BASE_URI: " + Configuration.REST_BASE_URI);
+        		logger.error("------------------------------------");
+        		logger.error("ERROR in initializing REST client...", e);
         }
         return client;
     }
