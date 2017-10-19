@@ -9,7 +9,8 @@ import java.util.Map;
  */
 public final class Configuration {
 
-    public static final String REST_BASE_URI = "http://mortgage-rule-creditservice.apps.127.0.0.1.nip.io/kie-server/services/rest/server";
+    //public static final String REST_BASE_URI = "http://mortgage-rule-creditservice.apps.127.0.0.1.nip.io/kie-server/services/rest/server";
+    public static final String REST_BASE_URI = "http://mortgage-rule-1-3ntxz:8080/kie-server/services/rest/server";
 
     public static enum Users {
 
