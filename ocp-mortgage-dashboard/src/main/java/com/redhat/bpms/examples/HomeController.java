@@ -36,6 +36,8 @@ public class HomeController {
     @Path("/running")
     @Produces(MediaType.APPLICATION_JSON)
     public List<ProcessInstance> listProcessInstances() {
+        
+        System.out.println("KKKKKKKKKKKK" + mgmtClientService.listProcessInstances().toString());
 
         return mgmtClientService.listProcessInstances();
     }
